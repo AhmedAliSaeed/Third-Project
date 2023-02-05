@@ -1,0 +1,1144 @@
+:root{
+    --main-color:#06A3DA;
+    --second-color:#F57E57;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Start Header Section */
+    .header{
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+    .header .container{
+        width: 100%;
+        /* position: relative; */
+    }
+
+    .header .container .left{
+        float: left;
+        width: 200px;
+    }
+
+    .header .container .right{
+        float: right;
+        width: 800px;
+    }
+
+    .header .container .left i{
+        padding-top: 50px;
+        padding-left: 45px;
+        color: var(--main-color) ;
+    }
+
+    .header .container .left h1{
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        font-size: 40px;
+        color: var(--main-color);
+    }
+
+    .header .container .right ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding-top: 25px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .header .container .right ul li:hover{
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+    .header .container .right button{
+        border: none;
+        padding: 15px 30px;
+        background-color: var(--main-color);
+        color: white;
+        position: relative;
+        top: -15px;
+        right: 23px;
+        border-radius: 8px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .header .container .right button:hover{
+        background-color: var(--second-color);
+        color: black;
+        transition: .7s;
+        cursor: pointer;
+    }
+/* End Header Section */
+
+/* Start First Section */
+    .firstSection{
+        padding-top: 100px;
+        padding-bottom: 15px;
+    }
+
+    .firstSection .container{
+        position: relative;
+        background-image: url(../Images/carousel-2.jpg);
+        background-size: cover;
+        opacity: .8;
+        height: 90vh;
+    }
+
+    .firstSection .container .title h1{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--main-color);
+        font-size: 60px;
+        /* height: 800px; */
+    }
+
+    .firstSection .container .title h2{
+        position: absolute;
+        top: 4%;
+        left: 35%;
+        font-size: 25px;
+        color: gray;
+        text-transform: uppercase;
+    }
+
+    .firstSection .container .but1{
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        padding: 15px 45px;
+        border: none;
+        background-color: var(--main-color);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .firstSection .container .but2{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        padding: 15px 45px;
+        border: none;
+        background-color: var(--second-color);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .firstSection .container .but1:hover{
+        background-color: var(--second-color);
+        color: black;
+        transition: .6s;
+    }
+
+    .firstSection .container .but2:hover{
+        background-color: var(--main-color);
+        color: black;
+        transition: .6s;
+    }
+
+    .firstSection .container .box{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+    .firstSection .container .box1{
+        position: absolute;
+        width: 300px;
+        top: 85%;
+        left: 10%;
+        height: 300px;
+        border-radius: 15px;
+        background-color: aliceblue;
+        color: rgb(11, 36, 36); 
+        box-shadow: -19px -16px 33px -18px rgba(0,0,0,0.61);
+    }
+
+    .firstSection .container .box1 h1{
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 0px;
+    }
+
+    .firstSection .container .box1 h4{
+        padding-left: 15px;
+        padding-bottom: 0px;
+    }
+
+    .firstSection .container .box1  p{
+        position: relative;
+        left: 150px;
+        top: -38px;
+    }
+
+    .firstSection .container .box1 button{
+        margin-left: 50px;
+        padding: 8px 30px;
+        border: none;
+        font-size: 18px;
+        border-radius: 8px;
+        position: absolute;
+        top: 87%;
+        background-color: var(--main-color);
+        font-weight: bold;
+    }
+
+    .firstSection .container .box1 button:hover{
+        background-color: #F57E57;
+        color: rgb(255, 255, 255);
+        transition: .6s;
+    }
+
+    .firstSection .container .box2{
+        position: absolute;
+        width: 300px;
+        top: 85%;
+        left: 35%;
+        height: 300px;
+        color: rgb(11, 36, 36); 
+        background-color: aliceblue;
+        border-radius: 15px;
+        box-shadow: -19px -16px 33px -18px rgba(0,0,0,0.61);
+    }
+
+    .firstSection .container .box2 h2{
+        text-align: center;
+        position: relative;
+        top: -3px;
+    }
+
+    .firstSection .container .box2 input{
+        position: relative;
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-bottom: 38px;
+        padding: 8px 30px;
+        border: none;
+        border-radius: 8px;
+        border: 2px solid black;
+    }
+
+    .firstSection .container .box2 select{
+        position: relative;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 38px;
+        padding: 8px 30px;
+        border: none;
+        border-radius: 8px;
+        border: 2px solid black;
+    }
+    
+    .firstSection .container .box2 button{
+        position: relative;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 11px 48px;
+        border: none;
+        border-radius: 8px;
+        border: 2px solid black;
+    }
+
+    .firstSection .container .box3{
+        position: absolute;
+        width: 300px;
+        top: 85%;
+        left: 61%;
+        height: 300px;
+        background-color: aliceblue;
+        color: rgb(11, 36, 36); 
+        border-radius: 15px;
+        box-shadow: -19px -16px 33px -18px rgba(0,0,0,0.61);
+    }
+
+    .firstSection .container .box3 h2{
+        text-align: center;
+        position: relative;
+        top: -3px;
+    }
+
+    .firstSection .container .box3 p{
+        text-align: center;
+        line-height: 1.7;
+        padding-top: 30px;
+        font-size: 17px;
+    }
+
+    .firstSection .container .box3 h1{
+        text-align: center;
+        padding-top: 30px;
+    }
+/* End First Section */
+
+/* Start Second Section */
+    .secondSection{
+        padding-top: 250px;
+        padding-bottom: 15px;
+    }
+
+    .secondSection .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0px;
+    }
+
+    .secondSection .container .right{
+        /* background-color: #F57E57; */
+        width: 400px;
+        position: relative;
+        margin-right: 260px;
+        padding-top: 50px;
+    }
+    .secondSection .container .right img{
+        width: 450px;
+        height: 600px;
+        position: absolute;
+        margin-left: 150px;
+        border-radius: 15px;
+        box-shadow: -19px -16px 33px -18px rgba(0,0,0,0.61);
+    }
+
+    .secondSection .container .left{
+        width: 700px;
+        /* background-color: #06A3DA; */
+        padding-top: 30px;
+        position: relative;
+    }
+
+    .secondSection .container .left h5{
+        text-transform: uppercase;
+        padding-left: 45px;
+        color: #06A3DA;
+        font-size: 25px;
+    }
+
+    .secondSection .container .left h1{
+        padding-left: 45px;
+        color: #091E3E;
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .secondSection .container .left h3{
+        padding-left: 45px;
+        color: gray;
+        font-style: italic;
+        line-height: 1.5;
+        /* font-size: 20px; */
+    }
+
+    .secondSection .container .left p{
+        padding-left: 45px;
+        line-height: 1.4;
+        color: rgb(141, 134, 134);
+    }
+
+    .secondSection .container .left .box1{
+        position: absolute;
+        top: 105%;
+        left: 45px;
+    }
+
+    .secondSection .container .left .box2{
+        position: absolute;
+        top: 105%;
+        left: 60%;
+    }
+
+    .secondSection .container .left .box1 i,
+    .secondSection .container .left .box2 i{
+        color: #06A3DA;
+        
+    }
+
+    .secondSection .container .left .box1 p,
+    .secondSection .container .left .box2 p{
+        position: relative;
+        top: -44px;
+        color: #091E3E;
+        font-size: 20px;
+    }
+
+    .secondSection .container .left button{
+        position: absolute;
+        top: 140%;
+        left: 45px;
+        border: none;
+        text-transform: uppercase;
+        padding: 15px 45px;
+        background-color: #06A3DA;
+        border-radius: 8px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .secondSection .container .left button:hover{
+        background-color: #F57E57;
+        color: rgb(0, 0, 0);
+        transition: .8s;
+    }
+/* End Second Section */
+
+/* Start Third Section */
+    .thirdSection{
+        padding-top: 280px;
+        padding-bottom: 15px;
+    }
+
+    .thirdSection .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-image: url(../Images/carousel-1.jpg);
+        background-size: cover;
+        height: 85vh;
+        position: relative;
+    }
+
+    .thirdSection .container::before{
+        background-color: rgba(8, 23, 65, 0.7);
+         content: '';
+         display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .thirdSection .container .left{
+        width: 50%;
+        position: absolute;
+        float: left;
+    }
+
+    .thirdSection .container .right{
+        width: 50%;
+        position: absolute;
+        right: 0;
+    }
+
+    .thirdSection .container .left h1{
+        padding-top: 150px;
+        padding-left: 80px;
+        color: white;
+        font-size: 50px;
+    }
+
+    .thirdSection .container .left p{
+        padding-left: 80px;
+        color: white;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .thirdSection .container .right{
+        background-color: rgb(6, 163, 218 ,.7);
+        width: 40%;
+        padding-top: 100px;
+        height: 100%;
+        margin-right: 80px;
+        padding-left: 40px;
+        border-radius: 15px;
+        box-shadow: -19px -16px 33px -18px rgba(0,0,0,0.61);
+    }
+
+    .thirdSection .container .right h1{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .thirdSection .container .box{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .thirdSection .container .box select{
+        border: none;
+        padding: 18px 43px 18px 10px;
+        border-radius: 5px;
+        margin-bottom: 18px;
+        outline: none;
+    }
+
+    .thirdSection .container .box input[type=text],
+    .thirdSection .container .box input[type=email]{
+        border: none;
+        padding: 18px 0px 18px 10px;
+        border-radius: 5px;
+        margin-bottom: 18px;
+        outline: none;
+    }
+
+    .thirdSection .container .box input[type=date]{
+        border: none;
+        padding: 18px 45px 18px 10px;
+        border-radius: 5px;
+        margin-bottom: 18px;
+        outline: none;
+    }
+
+    .thirdSection .container .box input[type=time]{
+        border: none;
+        padding: 18px 120px 18px 10px;
+        border-radius: 5px;
+        margin-bottom: 18px;
+        outline: none;
+    }
+
+    .thirdSection .container .right button{
+        position: relative;
+        top: 8%;
+        left: 0px;
+        border: none;
+        padding: 18px 151px;
+        background-color: #091E3E;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 3px;
+    }
+
+    .thirdSection .container .right button:hover{
+        background-color: #F57E57;
+        color: rgb(0, 0, 0);
+        transition: .8s;
+    }
+/* End Third Section */
+
+/* Start Fourth Section */
+    .fourthSection{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .fourthSection .container{
+        width: 100%;
+        position: relative;
+          background-color:aliceblue;  
+    }
+
+    .fourthSection .container .first h4{
+        padding-left: 15px;
+        color: #06A3DA;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .fourthSection .container .first h1{
+        padding-left: 15px;
+        color: #091E3E;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .fourthSection .container .first img{
+        clip: rect(0px 100px 0px 100px);
+    }
+
+    .fourthSection .container .second{
+        position: relative;
+    }
+
+    .fourthSection .container .second .box{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+
+    .fourthSection .container .second .box img{
+        border-radius: 8px;
+    }
+
+    .fourthSection .container .second .box p{
+        color: #091E3E;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .fourthSection .container .second .box1 :hover,
+    .fourthSection .container .second .box2 :hover,
+    .fourthSection .container .second .box3 :hover,
+    .fourthSection .container .second .box4 :hover{
+        box-shadow: 1px 11px 23px 0px rgba(0,0,0,0.75);
+        transition: .7s;
+       border: none;
+    }
+
+    .fourthSection .container .info{
+        position: relative;
+        top: 50px;
+        left: 450px;
+        background-color: #091E3E;
+        width: 450px;
+        height: 250px;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+        padding-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 1px 11px 23px 0px rgba(0,0,0,0.75);
+    }
+
+    .fourthSection .container .info:hover{
+        box-shadow: 1px 11px 23px 0px rgba(0,0,0,0.75);
+        transition: .7s;
+        width: 50%;
+       border: none;
+       cursor: pointer;
+       margin-left: -95px;
+    }
+
+    .fourthSection .container .info h2{
+        font-size: 35px;
+    }
+
+    .fourthSection .container .info p{
+        line-height: 1.8;
+        font-size: 18px;
+    }
+/* End Fourth Section */
+
+/* Start Fifth Section */
+    .fifthSection{
+        padding-top: 130px;
+        padding-bottom: 15px;
+        padding-left: 80px;
+    }
+
+    .fifthSection .container{
+        width: 90%;
+        background-image: url(../Images/back.jpg);
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        border-radius: 3px;
+        
+    }
+
+    .fifthSection .container::before{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.67);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 3px;
+    }
+
+    .fifthSection .container .info{
+        background-color: #06A3DA;
+        position: absolute;
+        top: 20%;
+        left: 50px;
+        width: 650px;
+        height: 400px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px 11px 23px 0px rgba(0,0,0,0.75);
+    }
+
+    .fifthSection .container .info h1{
+        font-size: 40px;
+    }
+
+    .fifthSection .container .info p{
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 0 20px;
+    }
+
+    .fifthSection .container .info button{
+        position: relative;
+        top: 40px;
+        left: 0px;
+        border: none;
+        padding: 20px 40px;
+        margin-left: 15px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+
+    .fifthSection .container .info button:hover{
+        background-color: #091E3E;
+        cursor: pointer;
+        color: white;
+        transition: .5s;
+    }
+/* End Fifth Section */
+
+/* Start Sixth Section */
+    .sixthSection{
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+
+    .sixthSection .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+        background-color: rgb(248, 242, 242);
+        border-radius: 2px;
+    }
+
+    .sixthSection .container .left{
+        /* background-color: #06A3DA; */
+        padding-top: 35px;
+        padding-left: 100px;
+    }
+
+    .sixthSection .container .left h4{
+        color:#06A3DA;
+        font-size: 22px;
+    }
+
+    .sixthSection .container .left h1,
+    .sixthSection .container .left h2{
+        color: #091E3E;
+        font-size: 45px;
+    }
+
+    .sixthSection .container .left p{
+        color: gray;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    .sixthSection .container .right .box{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0px;
+    
+    }
+
+    .sixthSection .container .right .box .box1,
+    .sixthSection .container .right .box .box2{
+        /* width: 150px; */
+        position: relative;
+        
+    }
+
+    .sixthSection .container .right .box1 img{
+        width: 280px;
+        border-radius: 8px;
+        padding-top: 52px;
+    }
+
+    .sixthSection .container .right .box2 img{
+        width: 280px;
+        border-radius: 5px;
+        padding-top: 52px;
+    }
+
+    .sixthSection .container .right .box .box1 span,
+    .sixthSection .container .right .box .box2 span{
+        color: #06A3DA;
+        font-weight: bold;
+        font-size: 28px;
+        position: relative;
+        top: -20px;
+        left: 100px;
+        background-color: azure;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .sixthSection .container .right .box .box1 h3,
+    .sixthSection .container .right .box .box2 h3{
+        padding-left: 60px;
+        color: #091E3E;
+        font-size: 25px;
+        position: relative;
+        top: -18px;
+    }
+
+    .sixthSection .container .right .info p{
+        font-size: 18px;
+        color: rgb(145, 142, 142);
+    }
+
+    .sixthSection .container .right .info i{
+        position: relative;
+        left: 220px;
+        top: -35px;
+        color: #06A3DA;
+    }
+
+    .sixthSection .container .right hr{
+        position: relative;
+        width: 80%;
+        left: -35px;
+        border: 1px solid #06A3DA;
+    }
+
+    .sixthSection .container .right button{
+        position: relative;
+        border: none;
+        padding: 12px 25px;
+        background-color: rgb(6, 163, 218);
+        border-radius: 8px;
+        left: 60px;
+        top: -30px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .sixthSection .container .right button:hover{
+        background-color: #F57E57;
+        color: black;
+        transition: .6s;
+        cursor: pointer;
+    }    
+/* End Sixth Section */
+
+/* Start Seventh Section */
+    .seventhSection{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .seventhSection .container{
+        background-image: url(../Images/refiew.jpg);
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+       
+        padding-top: 180px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .seventhSection .container .info{
+        background-color: rgb(6,163 , 218 ,.5);
+        width: 55%;
+        height: 60%;
+        border-radius: 8px;
+        color: white;
+        box-shadow: 1px 11px 23px 0px rgba(0,0,0,0.75);
+        position: absolute;
+        left: 340px;
+    }
+    .seventhSection .container .info img{
+        padding-top: 25px;
+        border-radius: 12px;
+        
+    }
+
+    .seventhSection .container .info h3{
+        padding: 8px 40px;
+        line-height: 1.6;
+    }
+
+    .seventhSection .container .info h1{
+        color: #091E3E;
+    }
+    
+
+    .seventhSection .container .info .left{
+        background-color: rgb(6,163 , 218 ,.5);
+        position: relative;
+        top: -50%;
+        left: -47%;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .seventhSection .container .info .right{
+        background-color: rgb(6,163 , 218 ,.5);
+        position: relative;
+        top: -50%;
+        right: -47%;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .seventhSection .container .info span:hover{
+        background-color: #F57E57;
+        transition: .5s;
+    }
+/* End Seventh Section */
+
+/* Start Eigth Section */
+    .eighthSection{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .eighthSection .container{
+        width: 100%;
+    }
+
+    .eighthSection .container .title{
+        background-color: rgb(199, 247, 231);
+        text-align: center;
+        width: 80%;
+        margin-left: 150px;
+        border-radius: 60px;
+        box-shadow: -13px 13px 27px -3px rgba(0,0,0,0.48);
+    }
+
+    .eighthSection .container .title p{
+        color: #06A3DA;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+
+    .eighthSection .container .title  h1{
+        color: #091E3E;
+        font-size: 32px;
+    }
+
+    .eighthSection .container .title button{
+        border: none;
+        background-color: #06A3DA;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 12px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .eighthSection .container .title button:hover{
+        background-color: #F57E57;
+        color: black;
+        transition: .6s;
+        cursor: pointer;
+    }
+
+    .eighthSection .container .box{
+        display: grid;
+        grid-template-columns: auto auto ;
+        padding-left: 230px;
+        position: relative;
+        background-color: aliceblue;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+
+    .eighthSection .container .box img{
+        padding-top: 50px;
+        width: 300px;
+        border-radius: 30%;
+        position: relative;
+    }
+
+    .eighthSection .container .box i{
+        position: relative;
+        top: 0%;
+        left:-38%;
+        background-color: #06A3DA;
+        padding: 8px;
+        border-radius: 5px;
+        color: white;
+        position: relative;
+    }
+
+    .eighthSection .container .box i:hover{
+        background-color: #F57E57;
+        color: black;
+        transition: .6s;
+        cursor: pointer;
+    }
+
+    .eighthSection .container .box1 h2{
+        padding-left: 55px;
+        color: #091E3E;
+    }
+
+    .eighthSection .container .box2 h2{
+        padding-left: 35px;
+        color:#091E3E;
+    }
+
+    .eighthSection .container .box3 h2{
+        padding-left: 35px;
+        color: #091E3E;
+    }
+
+    .eighthSection .container .box4 h2{
+        padding-left: 75px;
+        color: #091E3E;
+    }
+
+    .eighthSection .container .box1 p{
+        padding-left: 65px;
+        font-size: 18px;
+        color: #06A3DA;
+    }
+
+    .eighthSection .container .box2 p{
+        padding-left: 105px;
+        font-size: 18px;
+        color: #06A3DA;
+    }
+
+    .eighthSection .container .box3 p{
+        padding-left: 85px;
+        font-size: 18px;
+        color: #06A3DA;
+    }
+
+    .eighthSection .container .box4 p{
+        padding-left: 80px;
+        font-size: 18px;
+        color: #06A3DA;
+    }
+
+    .eighthSection .container .box1:hover,
+    .eighthSection .container .box2:hover,
+    .eighthSection .container .box3:hover,
+    .eighthSection .container .box4:hover{
+        box-shadow: -13px 13px 27px -3px rgba(0,0,0,0.48);
+        width: fit-content;
+        padding-left: 95px;
+        border-radius: 12px;
+        margin-top: 15px;
+        transition: .6s;
+    }
+
+/* End Eigth Section */
+
+/* Start Last Section */
+    .lastSection{
+        padding-top: 120px;
+        padding-bottom: 15px;
+    }
+
+    .lastSection .container{
+        background-color: #091E3E;
+        color: white;
+        position: relative;
+        height: 80vh;
+    }
+
+    .lastSection .container .sign{
+        position: absolute;
+        top: -8%;
+        left: 10%;
+        background-color: #06A3DA;
+        width: 80%;
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    .lastSection .container .sign input[type=email]{
+        border: none;
+        padding: 20px 290px 20px 8px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .lastSection .container .sign input[type=submit]{
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 20px;
+        background-color: #091E3E;
+        color: white;
+        font-weight: bold;
+    }
+
+    .lastSection .container .sign input[type=submit]:hover{
+        cursor: pointer;
+        background-color: #06A3DA;
+        transition: .6s;
+    }
+
+    .lastSection .container .box{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        position: relative;
+        top: 150px;
+        left: 80px;
+    }
+
+    .lastSection .container .box h1{
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    .lastSection .container .box i{
+        position: relative;
+        left: -25px;
+        color: #06A3DA;
+    }
+
+    .lastSection .container .box p{
+        position: relative;
+        top: -35px;
+    }
+
+    .lastSection .container .box li{
+        position: relative;
+        top: -20px;
+    }
+
+    .lastSection .container .box p:hover,
+    .lastSection .container .box li:hover{
+        cursor: pointer;
+        color: #F57E57;
+        transition: .6s;
+    }
+
+    .lastSection .container .box4 i{
+        padding: 16px;
+        background-color: #06A3DA;
+        color: white;
+        border-radius: 3px;
+        position: relative;
+        left: 0px;
+        margin-left: 5px;
+    }
+
+    .lastSection .container .box4 i:hover{
+        cursor: pointer;
+        background-color: #F57E57;
+        transition: .8s;
+        color: black;
+    }
+
+    .lastSection .container .foot{
+        position: relative;
+        top: 220px;
+        background-color:#030e1f;
+        height: 70px;
+        font-size: 18px;
+        
+    }
+
+    .lastSection .container .foot .left{
+        position: relative;
+        left: 140px;
+        top: 30px;
+    }
+
+    .lastSection .container .foot .right{
+        position: relative;
+        right: -72%;
+        top: -3px;
+    }
+/* End Last Section */
